@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Automation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Open Sans', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-[#222]">
+
+  <!-- Navigation -->
+  <header class="bg-[#1A237E] text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+      <div class="flex items-center space-x-3">
+        <span class="inline-flex items-center justify-center rounded-full bg-white shadow-md" style="width:56px; height:56px;">
+        <img src="C:\Users\lenovo\Desktop\Quantum Automation\QA.png" alt="Quantum Automation Logo" class="w-25 h-25 object-contain" />
+      </span>
+        <span class="text-xl font-bold">Quantum Automation</span>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-[#00BFAE]">Home</a>
+        <a href="#about" class="hover:text-[#00BFAE]">About</a>
+	<a href="#team" class="hover:text-[#00BFAE]">Team</a>
+        <a href="#services" class="hover:text-[#00BFAE]">Services</a>
+        <a href="#projects" class="hover:text-[#00BFAE]">Projects</a>
+        <a href="#contact" class="hover:text-[#00BFAE]">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#home" class="block py-2 hover:text-[#00BFAE]">Home</a>
+      <a href="#about" class="block py-2 hover:text-[#00BFAE]">About</a>
+      <a href="#team" class="block py-2 hover:text-[#00BFAE]">Team</a>
+      <a href="#services" class="block py-2 hover:text-[#00BFAE]">Services</a>
+      <a href="#projects" class="block py-2 hover:text-[#00BFAE]">Projects</a>
+      <a href="#contact" class="block py-2 hover:text-[#00BFAE]">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="text-center py-20 px-4 bg-[#F5F7FA]">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#1A237E] mb-4">Innovative BMS & IT Solutions</h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+      Empowering businesses with smart automation, seamless integration, and cutting-edge technology.
+    </p>
+    <a href="#services" class="inline-block bg-[#00BFAE] text-white px-8 py-3 rounded-lg shadow hover:bg-[#009e8e] transition">
+      Explore Our Solutions
+    </a>
+  </section>
+
+<!-- Quick Facts -->
+<section class="bg-white py-12 px-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+    <div>
+      <div class="text-3xl font-bold text-[#1A237E]">2+</div>
+      <div class="text-gray-600 mt-2">Years in Business</div>
+    </div>
+    <div>
+      <div class="text-3xl font-bold text-[#1A237E]">9+</div>
+      <div class="text-gray-600 mt-2">Years Team Experience</div>
+    </div>
+    <div>
+      <div class="text-3xl font-bold text-[#1A237E]">₹1.2 Cr+</div>
+      <div class="text-gray-600 mt-2">2023-24 Turnover</div>
+    </div>
+  </div>
+  <div class="text-center mt-8 text-gray-700">
+    Serving Manufacturing, Pharma, Hospitality, Corporate & Commercial Sectors
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="py-16 px-4 bg-white text-center">
+    <h2 class="text-3xl font-bold text-[#1A237E] mb-4">About Us</h2>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+      <strong>Quantum Automation</strong> provides innovative Building Management Systems and IT solutions that prioritize efficiency, automation, and sustainability.
+    </p>
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
+      <div class="bg-[#F5F7FA] p-6 rounded-lg shadow w-full md:w-80">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">Our Mission</h3>
+        <p>Empowering businesses through state-of-the-art automation and IT excellence.</p>
+      </div>
+      <div class="bg-[#F5F7FA] p-6 rounded-lg shadow w-full md:w-80">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">Our Vision</h3>
+        <p>To be the most trusted partner in intelligent building and IT automation.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Company at a Quick Glance -->
+<section class="bg-white py-12 px-4">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold text-[#1A237E] text-center mb-8">Company at a Quick Glance</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-3xl font-bold text-[#1A237E]">₹1.2 Cr+</div>
+        <div class="text-gray-600 mt-2">Turnover (2023-24)</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#1A237E]">₹3 Cr+</div>
+        <div class="text-gray-600 mt-2">Projected Turnover (2024-25)</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#1A237E]">Strong</div>
+        <div class="text-gray-600 mt-2">Financial Growth</div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-gray-700">
+      Trusted by leading organizations in manufacturing, pharma, hospitality, and corporate sectors.
+    </div>
+  </div>
+</section>
+
+
+<!-- Meet the Team -->
+<section id="team" class="py-12 px-4 bg-[#F5F7FA]">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold text-[#1A237E] mb-6 text-center">Meet the Team</h3>
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center">
+      <div class="bg-white p-6 rounded-lg shadow flex flex-col items-center">
+        <div class="font-bold text-[#00BFAE] text-lg mb-1">Mukund Dayma</div>
+        <div class="text-gray-700 text-sm">CEO<br>10+ years experience</div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow flex flex-col items-center">
+        <div class="font-bold text-[#00BFAE] text-lg mb-1">Gaurav Dayama</div>
+        <div class="text-gray-700 text-sm">BDO<br>3+ years experience</div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow flex flex-col items-center">
+        <div class="font-bold text-[#00BFAE] text-lg mb-1">Onkar Shete</div>
+        <div class="text-gray-700 text-sm">Head of BMS<br>4+ years experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 px-4 bg-[#F5F7FA] text-center">
+    <h2 class="text-3xl font-bold text-[#1A237E] mb-4">Our Services</h2>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+      Explore our wide range of BMS and IT offerings tailored for your business.
+    </p>
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">BMS Integration</h3>
+        <p>Fire alarm, HVAC, and access control integration for smart building automation.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">Niagara & Plant Programming</h3>
+        <p>Programming Niagara N4, JACE 8000, AHU, VAV, FCU, and chiller systems.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">IT & Server Solutions</h3>
+        <p>Robust VMware, networking, and cybersecurity solutions.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">ERP & Software Development</h3>
+        <p>Custom ERP and software for digital transformation and productivity.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">Digital Marketing</h3>
+        <p>SEO, PPC, and content marketing to amplify your digital presence.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl text-[#00BFAE] font-semibold mb-2">Data Analysis & Automation</h3>
+        <p>Excel automation and business dashboards for actionable insights.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-16 bg-white flex flex-col items-center px-4">
+  <h2 class="text-3xl font-bold text-[#1A237E] mb-4">Our Projects</h2>
+  <p class="text-lg text-gray-700 max-w-2xl text-center mb-8">
+    Take a look at some of our recent work in building management and IT automation.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
+    <!-- Project Card 1 -->
+    <div class="bg-[#F5F7FA] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center text-center">
+      <h3 class="text-xl font-semibold text-[#00BFAE] mb-2">Pharma Plant BMS Integration</h3>
+      <p class="text-gray-700 mb-2">
+        Integrated chiller and heat pump systems for a leading pharmaceutical manufacturer, improving efficiency and safety.
+      </p>
+    </div>
+    <!-- Project Card 2 -->
+    <div class="bg-[#F5F7FA] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center text-center">
+      <h3 class="text-xl font-semibold text-[#00BFAE] mb-2">Corporate Office Automation</h3>
+      <p class="text-gray-700 mb-2">
+        Delivered complete BMS and IT solutions for a major corporate office, including access control and energy management.
+      </p>
+    </div>
+    <!-- Project Card 3 -->
+    <div class="bg-[#F5F7FA] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center text-center">
+      <h3 class="text-xl font-semibold text-[#00BFAE] mb-2">Smart Hotel System</h3>
+      <p class="text-gray-700 mb-2">
+        Developed and commissioned an intelligent building system for a luxury hotel, enhancing guest comfort and operational control.
+      </p>
+    </div>
+    <!-- Project Card 4 -->
+    <div class="bg-[#F5F7FA] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center text-center">
+      <h3 class="text-xl font-semibold text-[#00BFAE] mb-2">Niagara N4 Graphics for Bank</h3>
+      <p class="text-gray-700 mb-2">
+        Designed and implemented custom Niagara N4 graphics and controls for a major financial institution.
+      </p>
+    </div>
+    <!-- Project Card 5 -->
+    <div class="bg-[#F5F7FA] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center text-center">
+      <h3 class="text-xl font-semibold text-[#00BFAE] mb-2">Manufacturing Plant Automation</h3>
+      <p class="text-gray-700 mb-2">
+        Automated HVAC, lighting, and safety systems for a large-scale manufacturing facility, boosting productivity.
+      </p>
+    </div>
+    <!-- Project Card 6 -->
+    <div class="bg-[#F5F7FA] p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center text-center">
+      <h3 class="text-xl font-semibold text-[#00BFAE] mb-2">Server & Network Setup</h3>
+      <p class="text-gray-700 mb-2">
+        Deployed secure server and network infrastructure for a multi-site client, ensuring reliability and scalability.
+      </p>
+    </div>
+  </div>
+</section>
+<center>
+  <!-- Ongoing and Previous Projects Summary -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full text-center">
+    <!-- Ongoing Projects -->
+    <div class="flex flex-col items-center">
+      <h3 class="text-2xl font-bold text-[#00BFAE] mb-4">Ongoing Projects</h3>
+      <ul class="space-y-6 w-full max-w-md">
+        <li class="bg-[#F5F7FA] p-5 rounded-lg shadow">
+          <div class="font-semibold text-[#1A237E]">Torrent Pharma</div>
+          <div class="text-gray-700 text-sm mb-1">Chiller & heat pump commissioning for pharma manufacturing</div>
+          <span class="text-xs bg-[#00BFAE] text-white px-2 py-1 rounded">Ongoing</span>
+        </li>
+        <li class="bg-[#F5F7FA] p-5 rounded-lg shadow">
+          <div class="font-semibold text-[#1A237E]">Intelligent Building Controls LLC</div>
+          <div class="text-gray-700 text-sm mb-1">Niagara graphics generation for building automation</div>
+          <span class="text-xs bg-[#00BFAE] text-white px-2 py-1 rounded">Ongoing</span>
+        </li>
+        <li class="bg-[#F5F7FA] p-5 rounded-lg shadow">
+          <div class="font-semibold text-[#1A237E]">Northwest Automation Products</div>
+          <div class="text-gray-700 text-sm mb-1">Floor plan design for advanced automation products</div>
+          <span class="text-xs bg-[#00BFAE] text-white px-2 py-1 rounded">Ongoing</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Previous Projects -->
+    <div class="flex flex-col items-center">
+      <h3 class="text-2xl font-bold text-[#00BFAE] mb-4">Previous Projects</h3>
+      <ul class="space-y-6 w-full max-w-md">
+        <li class="bg-[#F5F7FA] p-5 rounded-lg shadow">
+          <div class="font-semibold text-[#1A237E]">Kotak Bank, 3M, Finserv</div>
+          <div class="text-gray-700 text-sm mb-1">AHU commissioning, Niagara graphics implementation</div>
+          <span class="text-xs bg-green-600 text-white px-2 py-1 rounded">Completed</span>
+        </li>
+        <li class="bg-[#F5F7FA] p-5 rounded-lg shadow">
+          <div class="font-semibold text-[#1A237E]">Manufacturing & Pharma Clients</div>
+          <div class="text-gray-700 text-sm mb-1">WLD, PA system & energy meter integration</div>
+          <span class="text-xs bg-green-600 text-white px-2 py-1 rounded">Completed</span>
+        </li>
+        <li class="bg-[#F5F7FA] p-5 rounded-lg shadow">
+          <div class="font-semibold text-[#1A237E]">Smart Hotel System</div>
+          <div class="text-gray-700 text-sm mb-1">Smart automation for luxury hospitality and guest control</div>
+          <span class="text-xs bg-green-600 text-white px-2 py-1 rounded">Completed</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</center>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-[#F5F7FA] flex flex-col items-center px-4">
+    <h2 class="text-3xl font-bold text-[#1A237E] mb-4">Contact Us</h2>
+    <p class="text-lg text-gray-700 max-w-2xl text-center mb-8">
+      Ready to discuss your project or have a question? Fill out the form below or reach us directly.
+    </p>
+    <div class="w-full max-w-2xl bg-white p-8 rounded-lg shadow">
+      <form>
+        <div class="mb-4">
+          <label class="block text-[#1A237E] font-semibold mb-2" for="name">Name</label>
+          <input class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#00BFAE]" type="text" id="name" name="name" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-[#1A237E] font-semibold mb-2" for="email">Email</label>
+          <input class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#00BFAE]" type="email" id="email" name="email" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-[#1A237E] font-semibold mb-2" for="message">Message</label>
+          <textarea class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#00BFAE]" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-[#00BFAE] text-white px-6 py-2 rounded hover:bg-[#009e8e] transition">
+          Send Message
+        </button>
+      </form>
+      <div class="mt-8 text-gray-700 text-center">
+        <p><strong>Email:</strong> info@quantumautomation.com</p>
+        <p><strong>Phone:</strong> +91-12345-67890</p>
+        <p><strong>Address:</strong> Office No. 802, Gera’s Imperium Rise, Hinjawadi Phase II, Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057</p>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Clients Section -->
+<section class="py-12 bg-white px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-[#1A237E] mb-6">Our Clients</h3>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="bg-[#F5F7FA] px-4 py-2 rounded text-[#00BFAE] font-semibold">Torrent Pharma</span>
+      <span class="bg-[#F5F7FA] px-4 py-2 rounded text-[#00BFAE] font-semibold">Kotak Bank</span>
+      <span class="bg-[#F5F7FA] px-4 py-2 rounded text-[#00BFAE] font-semibold">3M</span>
+      <span class="bg-[#F5F7FA] px-4 py-2 rounded text-[#00BFAE] font-semibold">Finserv</span>
+      <span class="bg-[#F5F7FA] px-4 py-2 rounded text-[#00BFAE] font-semibold">Intelligent Building Controls LLC</span>
+      <span class="bg-[#F5F7FA] px-4 py-2 rounded text-[#00BFAE] font-semibold">Northwest Automation Products</span>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-[#1A237E] text-white py-6 mt-0 w-full">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center px-4">
+    <!-- Logo and Company Name -->
+    <div class="flex items-center justify-center md:justify-start mb-4 md:mb-0 space-x-2">
+      <span class="inline-flex items-center justify-center rounded-full bg-white shadow-md" style="width:44px; height:44px;">
+        <img src="assets/logo.png" alt="Quantum Automation Logo" class="w-10 h-10 object-contain" />
+      </span>
+      <span class="font-bold text-lg">Quantum Automation</span>
+    </div>
+    <!-- Navigation Links -->
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-4 md:mb-0">
+      <a href="#home" class="hover:text-[#00BFAE]">Home</a>
+      <a href="#about" class="hover:text-[#00BFAE]">About</a>
+      <a href="#team" class="hover:text-[#00BFAE]">Team</a>
+      <a href="#services" class="hover:text-[#00BFAE]">Services</a>
+      <a href="#projects" class="hover:text-[#00BFAE]">Projects</a>
+      <a href="#contact" class="hover:text-[#00BFAE]">Contact</a>
+    </div>
+    <!-- Social Icons -->
+    <div class="flex justify-center md:justify-end space-x-4">
+      <!-- Social icons (optional, use SVG or image icons) -->
+      <a href="#" aria-label="LinkedIn" class="hover:text-[#00BFAE]">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.786-1.75-1.757 0-.97.784-1.757 1.75-1.757s1.75.787 1.75 1.757c0 .971-.784 1.757-1.75 1.757zm13.5 11.268h-3v-5.604c0-1.337-.024-3.062-1.867-3.062-1.868 0-2.154 1.459-2.154 2.968v5.698h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.562 2.845-1.562 3.042 0 3.604 2.002 3.604 4.604v5.591z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="hover:text-[#00BFAE]">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 0 0-8.391 4.482c-4.086-.205-7.713-2.165-10.141-5.144a4.822 4.822 0 0 0-.666 2.475c0 1.708.87 3.213 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.868 9.868 0 0 1-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.496 14.009-13.986 0-.213-.005-.425-.014-.636a10.025 10.025 0 0 0 2.457-2.548z"/></svg>
+      </a>
+      <a href="#" aria-label="Facebook" class="hover:text-[#00BFAE]">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.326v21.348c0 .733.592 1.326 1.325 1.326h11.495v-9.294h-3.124v-3.622h3.124v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.312h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.326v-21.349c0-.734-.593-1.326-1.326-1.326z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="text-center text-gray-300 text-sm mt-4">
+    &copy; 2025 Quantum Automation. All rights reserved.
+  </div>
+</footer>
+
+  <!-- Script for mobile toggle -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
